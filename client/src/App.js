@@ -5,7 +5,7 @@ function App() {
   const [videos, setVideos] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:8000/videos")
+    fetch("https://myappserverapi.onrender.com")
     .then((response) => response.json())
     .then((data) => {
       setVideos(data);
